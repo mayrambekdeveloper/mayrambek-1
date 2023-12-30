@@ -1,0 +1,137 @@
+body {
+    background: #000;
+}
+
+/* .box {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    position: relative; */
+
+    /* animation-name: box-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s; */
+
+    /* animation: box-animation 4s linear infinite alternate 10s  ;
+} */
+
+/* @keyframes box-animation {
+    0%{
+        left: 0;
+    }
+    20% {
+        background: yellow;
+    }
+    40% {
+        background: pink;
+    }
+    60% {
+        background: crimson;
+    }
+    80% {
+        background: purple;
+    }
+   
+    100%{
+        left: 500px;
+        border-radius: 0%;
+        background: red;
+        border: 4px dotted gray;
+    } */
+/* } */
+
+.box {
+    width: 180px;
+    height: 350px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    animation: box 3s linear;
+
+}
+
+@keyframes box {
+    0%{
+        transform: translateX(1000px);
+    }
+}
+
+.red {
+    width: 90px;
+    height: 90px;
+    background: black;
+    border-radius: 50%;
+    animation: red 5s linear;
+}
+
+@keyframes red {
+    0%{
+        background: #000;
+    }
+    1%{
+        background: red;
+    }
+    100%{
+        background: red;
+    }
+}
+
+.yellow {
+    width: 90px;
+    height: 90px;
+    background: black;
+    border-radius: 50%;
+    animation: yellow 5s linear normal 5s;
+}
+@keyframes yellow {
+    0%{
+        background: yellow;
+    }
+    20%{
+        background: yellow;
+    }
+    40%{
+        background: yellow;
+    }
+    60%{
+        background: yellow;
+    }
+    70%{
+        background: black;
+    }
+    80%{
+        background: yellow;
+    }
+    90%{
+        background: black;
+    }
+    100%{
+        background: yellow;
+    }
+}
+
+.green {
+    width: 90px;
+    height: 90px;
+    background: black;
+    border-radius: 50%;
+    animation: green 5s linear normal 10s;
+}
+@keyframes green{
+    0%{
+        background: #000;
+    }
+    1%{
+        background: green;
+    }
+    100%{
+        background: green;
+    }
+}
